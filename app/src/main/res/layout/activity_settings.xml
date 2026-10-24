@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="主界面与弹窗设置" android:textSize="20sp" android:textStyle="bold"
+            android:textColor="#E65100" android:layout_marginBottom="16dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="主界面字体大小" android:textSize="16sp" />
+        <SeekBar android:id="@+id/sb_font_size" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:max="36" />
+        <TextView android:id="@+id/tv_font_val" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="18 sp" android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="主界面字体颜色" android:textSize="16sp" />
+        <Spinner android:id="@+id/sp_font_color" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="全屏弹窗背景颜色" android:textSize="16sp" />
+        <Spinner android:id="@+id/sp_popup_bg" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="全屏弹窗文字内容" android:textSize="16sp" />
+        <EditText android:id="@+id/et_popup_text" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="textMultiLine"
+            android:minLines="2" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="全屏弹窗文字颜色" android:textSize="16sp" />
+        <Spinner android:id="@+id/sp_popup_text_color" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="全屏弹窗文字大小" android:textSize="16sp" />
+        <SeekBar android:id="@+id/sb_popup_font_size" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:max="48" />
+        <TextView android:id="@+id/tv_popup_font_val" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="28 sp" android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="休息提醒间隔（分钟）" android:textSize="16sp" />
+        <EditText android:id="@+id/et_break_min" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="number"
+            android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="眼睛休息时长（分钟）" android:textSize="16sp" />
+        <EditText android:id="@+id/et_rest_min" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="number"
+            android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="延迟提醒时长（分钟，默认5）" android:textSize="16sp"
+            android:textColor="#E65100" />
+        <EditText android:id="@+id/et_delay_min" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="number"
+            android:hint="不填则默认 5 分钟" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="开机自启动（息屏后自动恢复计时）" android:textSize="16sp" />
+        <Switch android:id="@+id/sw_auto_start" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginBottom="16dp" />
+
+        <Button android:id="@+id/btn_system_settings" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="打开系统自启动/电池设置"
+            android:layout_marginBottom="12dp" />
+
+        <Button android:id="@+id/btn_done" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="完成并返回" />
+
+    </LinearLayout>
+</ScrollView>

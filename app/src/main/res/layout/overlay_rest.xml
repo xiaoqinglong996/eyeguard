@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center"
+    android:padding="32dp">
+
+    <TextView android:id="@+id/overlay_text"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="该休息一下眼睛啦！\n闭眼或远眺，放松双眼"
+        android:textSize="28sp" android:textColor="#FFFFFF"
+        android:gravity="center" android:lineSpacingExtra="10dp"
+        android:layout_marginBottom="40dp" />
+
+    <LinearLayout android:id="@+id/overlay_buttons_remind"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center">
+
+        <Button android:id="@+id/overlay_confirm"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="确认休息" android:textSize="22sp"
+            android:padding="14dp"
+            android:layout_marginEnd="16dp" />
+
+        <Button android:id="@+id/overlay_delay"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="延迟5分钟" android:textSize="22sp"
+            android:padding="14dp" />
+    </LinearLayout>
+
+    <Button android:id="@+id/overlay_emergency"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="紧急取消"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_marginTop="32dp" />
+
+</LinearLayout>

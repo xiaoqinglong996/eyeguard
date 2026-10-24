@@ -1,0 +1,27 @@
+# ===== 签名密钥：绝不可提交 =====
+# 泄露 keystore 等于任何人都能伪造你的发布签名
+keystore.jks
+*.jks
+
+# ===== 构建产物 / 二进制 =====
+*.apk
+*.idsig
+*.aab
+*.class
+*.dex
+bin/
+gen/
+obj/
+release/
+
+# ===== 本地上传脚本与临时产物 =====
+build/
+*.params.json
+weiyun_*.json
+
+# ===== OS / IDE 杂项 =====
+.DS_Store
+Thumbs.db
+*.iml
+.idea/
+.vscode/
